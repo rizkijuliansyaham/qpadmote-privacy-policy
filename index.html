@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow" />
+  <title>Kebijakan Privasi — Qpadmote</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #1a1a1a;
+      --muted: #5c5c5c;
+      --accent: #0b6e4f;
+      --border: #e2e2e2;
+      --card: #f7f9f8;
+      --maxw: 820px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121414;
+        --fg: #e8eae9;
+        --muted: #9aa0a0;
+        --accent: #3ddc97;
+        --border: #2a2d2d;
+        --card: #1a1d1d;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      font-size: 16px;
+    }
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 32px 20px 72px; }
+    header { border-bottom: 1px solid var(--border); padding-bottom: 20px; margin-bottom: 8px; }
+    h1 { font-size: 1.7rem; margin: 0 0 4px; }
+    h2 { font-size: 1.2rem; margin: 32px 0 8px; color: var(--accent); }
+    h3 { font-size: 1.02rem; margin: 20px 0 4px; }
+    p, li { color: var(--fg); }
+    .muted { color: var(--muted); font-size: 0.9rem; }
+    a { color: var(--accent); }
+    ul { padding-left: 22px; }
+    li { margin: 6px 0; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 18px;
+      margin: 14px 0;
+    }
+    .lang-toggle {
+      display: inline-flex; gap: 0; border: 1px solid var(--border);
+      border-radius: 999px; overflow: hidden; margin-top: 14px;
+    }
+    .lang-toggle button {
+      border: 0; background: transparent; color: var(--muted);
+      padding: 7px 18px; font-size: 0.9rem; cursor: pointer; font-weight: 600;
+    }
+    .lang-toggle button.active { background: var(--accent); color: #fff; }
+    [data-lang] { display: none; }
+    [data-lang].visible { display: block; }
+    footer { margin-top: 48px; border-top: 1px solid var(--border); padding-top: 16px; }
+    code { background: var(--card); padding: 1px 6px; border-radius: 5px; font-size: 0.88em; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Kebijakan Privasi — Qpadmote</h1>
+      <p class="muted">Terakhir diperbarui: 11 November 2026 · Last updated: November 11, 2026</p>
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button id="btn-id" class="active" onclick="setLang('id')">Bahasa Indonesia</button>
+        <button id="btn-en" onclick="setLang('en')">English</button>
+      </div>
+    </header>
+
+    <!-- ===================== BAHASA INDONESIA ===================== -->
+    <section data-lang="id" class="visible">
+      <h2>1. Pendahuluan</h2>
+      <p>Qpadmote ("Aplikasi") adalah aplikasi remote dan gamepad untuk Android TV yang dikembangkan oleh <strong>devQ</strong> ("kami"). Kebijakan Privasi ini menjelaskan informasi apa yang diproses saat kamu memakai Aplikasi, untuk apa informasi itu dipakai, dan pilihan yang kamu miliki. Dengan memakai Aplikasi, kamu menyetujui kebijakan ini.</p>
+
+      <h2>2. Ringkasan</h2>
+      <ul>
+        <li>Aplikasi tidak memerlukan akun atau login.</li>
+        <li>Kami tidak meminta nama, email, nomor telepon, atau data pribadi lain untuk memakai Aplikasi.</li>
+        <li>Aplikasi menampilkan iklan dari pihak ketiga, yang dapat memproses data tertentu dari perangkatmu (lihat bagian 5).</li>
+        <li>Kami tidak menjual data pribadimu.</li>
+      </ul>
+
+      <h2>3. Informasi yang Kami Kumpulkan</h2>
+      <p><strong>Data yang kami kumpulkan sendiri.</strong> Kami tidak mengumpulkan atau menyimpan data pribadi di server kami. Karena tidak ada login, kami tidak memiliki akun, profil, atau riwayat pengguna.</p>
+      <p><strong>Data yang tersimpan di perangkatmu.</strong> Aplikasi dapat menyimpan pengaturan seperti pilihan mode (Gamepad, Arcade, atau Setir), sensitivitas, dan perangkat TV yang pernah terhubung. Data ini hanya ada di perangkatmu dan terhapus saat Aplikasi di-uninstall atau datanya dihapus.</p>
+      <p><strong>Data yang diproses oleh pihak ketiga.</strong> Layanan iklan yang tertanam di Aplikasi dapat mengumpulkan data secara otomatis, seperti ID iklan perangkat, alamat IP, informasi perangkat dan sistem operasi, serta data interaksi dengan iklan. Penjelasan lengkapnya ada di bagian 5.</p>
+
+      <h2>4. Izin Aplikasi dan Penggunaannya</h2>
+      <ul>
+        <li><strong>Akses jaringan</strong> — untuk mencari dan terhubung ke perangkat Android TV di jaringan Wi-Fi yang sama. Perintah remote dan gamepad dikirim langsung ke TV-mu.</li>
+        <li><strong>Sensor gerak (gyroscope/akselerometer)</strong> — dipakai hanya untuk fitur Setir. Data sensor diproses di perangkat secara langsung dan tidak disimpan maupun dikirim ke server kami.</li>
+        <li><strong>Getar</strong> — untuk umpan balik saat tombol ditekan.</li>
+        <li><strong>ID iklan</strong> — dipakai oleh layanan iklan, seperti dijelaskan di bagian 5.</li>
+      </ul>
+      <p>Aplikasi tidak mengakses kontak, kamera, mikrofon, lokasi, galeri, maupun pesanmu.</p>
+
+      <h2>5. Iklan dan Layanan Pihak Ketiga</h2>
+      <p>Aplikasi berisi iklan yang ditampilkan hanya melalui <strong>Google AdMob</strong>. Layanan ini dapat memakai ID iklan dan data perangkat untuk menampilkan iklan, mengukur performanya, mencegah penipuan, dan, jika kamu mengizinkan, menampilkan iklan yang dipersonalisasi. Data tersebut diproses oleh penyedia iklan sesuai kebijakan privasi mereka, bukan oleh kami.</p>
+      <ul>
+        <li>Kebijakan Privasi Google: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+        <li>Cara Google menggunakan data dari aplikasi mitra: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">policies.google.com/technologies/partner-sites</a></li>
+      </ul>
+      <p>Untuk pengguna di Wilayah Ekonomi Eropa, Inggris, dan wilayah lain yang mewajibkannya, Aplikasi dapat menampilkan formulir persetujuan sebelum iklan ditampilkan. Kamu dapat mengubah pilihan itu kapan saja jika tersedia di dalam Aplikasi.</p>
+
+      <h2>6. Cara Kami Menggunakan Informasi</h2>
+      <p>Karena kami tidak mengumpulkan data pribadi sendiri, penggunaan informasi oleh kami terbatas pada menjalankan fitur Aplikasi (menghubungkan ke TV dan mengirim perintah), menyimpan pengaturanmu di perangkat, dan menampilkan iklan untuk membiayai pengembangan Aplikasi.</p>
+
+      <h2>7. Penyimpanan dan Keamanan</h2>
+      <p>Pengaturan Aplikasi disimpan di perangkatmu. Komunikasi dengan TV berlangsung di jaringan lokalmu. Kami berupaya menjaga keamanan Aplikasi, tetapi tidak ada metode penyimpanan atau transmisi data yang sepenuhnya bebas risiko.</p>
+
+      <h2>8. Pilihan dan Hakmu</h2>
+      <ul>
+        <li><strong>Mematikan personalisasi iklan</strong> — buka Setelan perangkat &gt; Google &gt; Iklan, lalu pilih untuk menonaktifkan personalisasi iklan atau menghapus ID iklan. Letak menu dapat berbeda di tiap perangkat.</li>
+        <li><strong>Menghapus data lokal</strong> — hapus data Aplikasi di Setelan perangkat atau uninstall Aplikasi.</li>
+        <li><strong>Hak atas data pribadi</strong> — sesuai hukum yang berlaku (misalnya UU Pelindungan Data Pribadi di Indonesia dan GDPR di Eropa), kamu dapat meminta akses, koreksi, atau penghapusan data pribadimu. Karena kami tidak menyimpan data pribadi di server kami, permintaan terkait data iklan perlu diajukan ke penyedia iklan.</li>
+      </ul>
+
+      <h2>9. Privasi Anak</h2>
+      <p>Aplikasi tidak ditujukan untuk anak di bawah usia 13 tahun, dan kami tidak dengan sengaja mengumpulkan data dari mereka. Jika kamu orang tua atau wali dan mengetahui anakmu memberikan data pribadi, hubungi kami agar kami dapat menanganinya.</p>
+
+      <h2>10. Perubahan Kebijakan</h2>
+      <p>Kami dapat memperbarui kebijakan ini dari waktu ke waktu. Versi terbaru akan ditampilkan di halaman ini beserta tanggal pembaruannya. Dengan terus memakai Aplikasi setelah perubahan, kamu dianggap menyetujui kebijakan yang diperbarui.</p>
+
+      <h2>11. Hubungi Kami</h2>
+      <p>Jika ada pertanyaan tentang kebijakan ini, hubungi:</p>
+      <p>devQ — Email: <a href="mailto:qj.fdevs@gmail.com">qj.fdevs@gmail.com</a></p>
+    </section>
+
+    <!-- ===================== ENGLISH ===================== -->
+    <section data-lang="en">
+      <h2>1. Introduction</h2>
+      <p>Qpadmote ("App") is a remote and gamepad app for Android TV developed by <strong>devQ</strong> ("we"). This Privacy Policy explains what information is processed when you use the App, how it is used, and the choices you have. By using the App, you agree to this policy.</p>
+
+      <h2>2. Summary</h2>
+      <ul>
+        <li>The App does not require an account or login.</li>
+        <li>We do not ask for your name, email, phone number, or other personal data to use the App.</li>
+        <li>The App shows ads from a third party, Google AdMob, which may process certain data from your device (see section 5).</li>
+        <li>We do not sell your personal data.</li>
+      </ul>
+
+      <h2>3. Information We Collect</h2>
+      <p><strong>Data we collect ourselves.</strong> We do not collect or store personal data on our servers. Because there is no login, we have no accounts, profiles, or user history.</p>
+      <p><strong>Data stored on your device.</strong> The App may save settings such as your chosen mode (Gamepad, Arcade, or Steering), sensitivity, and the TVs you have connected to. This data stays on your device and is removed when you uninstall the App or clear its data.</p>
+      <p><strong>Data processed by third parties.</strong> The ad service built into the App may automatically collect data such as your device's advertising ID, IP address, device and operating system information, and data about how you interact with ads. See section 5.</p>
+
+      <h2>4. Permissions and How They Are Used</h2>
+      <ul>
+        <li><strong>Network access</strong> — to find and connect to Android TV devices on the same Wi-Fi network. Remote and gamepad commands are sent directly to your TV.</li>
+        <li><strong>Motion sensors (gyroscope/accelerometer)</strong> — used only for the Steering feature. Sensor data is processed on your device in real time and is not stored or sent to our servers.</li>
+        <li><strong>Vibration</strong> — for feedback when you press a button.</li>
+        <li><strong>Advertising ID</strong> — used by the ad service, as described in section 5.</li>
+      </ul>
+      <p>The App does not access your contacts, camera, microphone, location, photos, or messages.</p>
+
+      <h2>5. Ads and Third-Party Services</h2>
+      <p>The App contains ads shown only through <strong>Google AdMob</strong>. This service may use your advertising ID and device data to show ads, measure their performance, prevent fraud, and, if you allow it, show personalized ads. This data is processed by the ad provider under its own privacy policy, not by us.</p>
+      <ul>
+        <li>Google Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+        <li>How Google uses data from partner apps: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">policies.google.com/technologies/partner-sites</a></li>
+      </ul>
+      <p>For users in the European Economic Area, the United Kingdom, and other regions that require it, the App may show a consent form before ads are displayed. You can change your choice at any time if the option is available in the App.</p>
+
+      <h2>6. How We Use Information</h2>
+      <p>Because we do not collect personal data ourselves, our use of information is limited to running the App's features (connecting to your TV and sending commands), saving your settings on your device, and showing ads to fund the development of the App.</p>
+
+      <h2>7. Storage and Security</h2>
+      <p>The App's settings are stored on your device. Communication with your TV happens on your local network. We work to keep the App secure, but no method of storage or transmission is completely risk-free.</p>
+
+      <h2>8. Your Choices and Rights</h2>
+      <ul>
+        <li><strong>Turning off ad personalization</strong> — open your device Settings &gt; Google &gt; Ads, then turn off ad personalization or delete your advertising ID. Menu locations may vary by device.</li>
+        <li><strong>Deleting local data</strong> — clear the App's data in your device Settings or uninstall the App.</li>
+        <li><strong>Rights over personal data</strong> — under applicable law (for example, Indonesia's Personal Data Protection Law and the GDPR in Europe), you may request access to, correction of, or deletion of your personal data. Because we do not store personal data on our servers, requests about ad data should be directed to the ad provider.</li>
+      </ul>
+
+      <h2>9. Children's Privacy</h2>
+      <p>The App is not directed to children under 13, and we do not knowingly collect data from them. If you are a parent or guardian and believe your child has provided personal data, contact us so we can address it.</p>
+
+      <h2>10. Changes to This Policy</h2>
+      <p>We may update this policy from time to time. The latest version will be shown on this page with its update date. By continuing to use the App after a change, you accept the updated policy.</p>
+
+      <h2>11. Contact Us</h2>
+      <p>If you have questions about this policy, contact:</p>
+      <p>devQ — Email: <a href="mailto:qj.fdevs@gmail.com">qj.fdevs@gmail.com</a></p>
+    </section>
+
+    <footer>
+      <p class="muted">© 2026 devQ — Qpadmote. Remote &amp; gamepad for Android TV.</p>
+    </footer>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-lang]').forEach(function (el) {
+        el.classList.toggle('visible', el.getAttribute('data-lang') === lang);
+      });
+      document.getElementById('btn-id').classList.toggle('active', lang === 'id');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    }
+    // Default to English only if the device language is explicitly non-Indonesian English.
+    if ((navigator.language || '').toLowerCase().startsWith('en')) {
+      setLang('en');
+    }
+  </script>
+</body>
+</html>
